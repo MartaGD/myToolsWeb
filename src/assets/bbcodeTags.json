@@ -1,0 +1,12 @@
+{
+    "openSign":"[",
+    "closeSign":"]",
+    "openTABLE":"[table",
+    "closeTABLE":"[/table]",
+    "openTR":"[r",
+    "closeTR":"[/r]",
+    "openTD":"[c",
+    "closeTD":"[/c]",
+    "openSpoiler":"[spoiler]",
+    "closeSpoiler":"[/spoiler]"
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="divFlex">
+          <br/>
+          <label for="rows">{{lbRows}}</label>
+          <input type="number" name="inputs" id="rows" min="1" value="1">
+          <label for="cols">{{lbCols}}</label>
+          <input type="number" name="inputs" id="cols" min="1" value="1">
+          <br/><br/>        
+        </div>
+    
+        <div class="divFlex">
+          <label for="htmlCode">{{lbHtmlCode}}</label>
+          <br/>
+          <textarea readonly id="htmlCode" rows="4" cols="65">{{provaHTML}}</textarea>
+          <ion-button id="btnhtmlCode" shape="round" size="large" (click)="copyTextArea($event)">
+            <ion-icon name="clipboard"></ion-icon>
+          </ion-button>
+          <br/>
+        </div>
+
+        <div class="divFlex">
+          <label for="BBCode">{{lbBbCode}}</label><br/>
+          <textarea  readonly id="BBCode" rows="4" cols="65">{{provaBBCODE}}</textarea>
+          <ion-button id="btnBBCode" shape="round" size="large" (click)="copyTextArea($event)">
+            <ion-icon name="clipboard"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <br/>
+        <div id="page"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

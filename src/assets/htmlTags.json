@@ -1,0 +1,10 @@
+{
+    "openSign":"<",
+    "closeSign":">",
+    "openTABLE":"<table",
+    "closeTABLE":"</table>",
+    "openTR":"<tr",
+    "closeTR":"</tr>",
+    "openTD":"<td",
+    "closeTD":"</td>"
+}

@@ -1,0 +1,32 @@
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  label{font-size: 20px}
+
+  td {
+    padding: 5px;
+  }
+
+  textarea {
+    resize: none;
+}
+
+.divFlex {
+  flex-wrap: wrap-reverse;
+}
+
+ion-col > * {
+  padding: 1%;
+}
+ion-col > ion-button {
+  position: absolute;
+}
+
+ion-button {
+  --background: #ffce00;
+    --background-focused: #d4aa00;
+    --background-hover: #f8de76;
+    --color: #222428;
+}

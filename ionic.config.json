@@ -1,5 +1,7 @@
 {
   "name": "myTools",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
