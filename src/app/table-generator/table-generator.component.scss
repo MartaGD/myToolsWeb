@@ -11,6 +11,13 @@ table td {
 
   textarea {
     resize: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type=number]{
+  width: fit-content;
+  display: block;
 }
 
 .divFlex {
@@ -20,13 +27,12 @@ table td {
 ion-col > * {
   padding: 1%;
 }
-ion-col > ion-button {
-  position: absolute;
-}
 
 ion-button {
   --background: #ffce00;
     --background-focused: #d4aa00;
     --background-hover: #f8de76;
     --color: #222428;
+    display: inline-block;
+    vertical-align: middle;
 }

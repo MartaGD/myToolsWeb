@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'tblGenerator',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'tblGenerator',
     loadChildren: () => import('./table-generator/table-generator.module').then(m => m.TableGeneratorModule)
+  },
+  {
+    path: 'zenbaki',
+    loadChildren: () => import('./zenbaki-jokoa/zenbaki-jokoa.module').then(m => m.ZenbakiJokoaModule)
   }
 ];
 

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row  text-center>
+      {{number}}
+    </ion-row>
+    <ion-row  text-center>
+        <ion-item-group>
+          <ion-button id="btnhtmlCode" shape="round" size="large" (click)="copyTextArea($event)">
+            Vegetable
+          </ion-button>
+          <ion-button id="btnhtmlCode" shape="round" size="large" (click)="copyTextArea($event)">
+            Lettuce
+          </ion-button>
+          <ion-button id="btnhtmlCode" shape="round" size="large" (click)="copyTextArea($event)">
+            Tomatoe
+          </ion-button>
+        </ion-item-group>
+    </ion-row>
+  </ion-grid>
+</ion-content>
