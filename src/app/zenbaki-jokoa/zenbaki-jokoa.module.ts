@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { ZenbakiJokoaComponent } from './zenbaki-jokoa.component';
+import { ZenbakiJokoaService } from './zenbaki-jokoa.service';
 
 @NgModule({
   declarations: [ZenbakiJokoaComponent],
@@ -15,6 +16,9 @@ import { ZenbakiJokoaComponent } from './zenbaki-jokoa.component';
       component: ZenbakiJokoaComponent
     }
   ])
+  ],
+  providers: [
+    ZenbakiJokoaService
   ]
 })
 export class ZenbakiJokoaModule { }

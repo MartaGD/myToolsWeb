@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation  } from '@angular/core';
 import{ TableGeneratorService } from './table-generator.service';
-import{ ITagsHTML } from '../model/tagsHTML';
+import{ ITags } from '../model/tagsHTML';
 
 @Component({
   selector: 'app-table-generator',
@@ -16,8 +16,8 @@ export class TableGeneratorComponent  {
   lbBbCode : string = "BBCode:";
   public provaHTML: string;
   public provaBBCODE: string;
-  private tagsBBCode: ITagsHTML;
-  private tagsHTML: ITagsHTML;
+  private tagsBBCode: ITags;
+  private tagsHTML: ITags;
   private msgTxtCopied : string = "Code copied to the clipboard.";
 
   constructor(private tblGeneratorService: TableGeneratorService){}
@@ -54,7 +54,7 @@ export class TableGeneratorComponent  {
         this.provaBBCODE =  this.createTableHTML(+rows.value,+cols.value,this.tagsBBCode);
   }
 
-  createTableHTML(rows : number,columns : number ,data: ITagsHTML) : string{
+  createTableHTML(rows : number,columns : number ,data: ITags) : string{
   let totalCells = 1;
   let table = "";
   /*Los Open siempre tienen que concaternarse con el closeSign

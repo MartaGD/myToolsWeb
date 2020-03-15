@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>SOUNDS</ion-card-title>
+    </ion-card-header>
+    <div *ngFor="let sound of sounds"> 
+      <ion-card-content>
+        {{sound.nameShow}}
+        <audio src="../../assets/sounds/{{sound.nameFile}}{{sound.extension}}" id="{{sound.nameFile}}" preload="auto">
+          <p>Tu navegador no implementa el elemento audio.</p>
+        </audio>
+        {{sound.prueba}}
+        <div>
+          <ion-button class="controls" (click)="playerPlayPause(sound.nameFile)" color="dark">
+            <ion-icon id="{{sound.nameFile}}Btn1" slot="icon-only" name="play"></ion-icon>
+          </ion-button>
+          <ion-button class="controls" (click)="playerStop(sound.nameFile)" color="dark">
+              <ion-icon id="{{sound.nameFile}}Btn2" slot="icon-only" name="square"></ion-icon>
+          </ion-button>
+          <ion-button class="controls" (click)="playerLoop(sound.nameFile)" color="dark">
+              <ion-icon id="{{sound.nameFile}}Btn3" slot="icon-only" name="infinite"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>SONGS</ion-card-title>
+      </ion-card-header>
+      <div *ngFor="let sound of songs"> 
+        <ion-card-content>
+          {{sound.nameShow}}
+          <audio src="../../assets/sounds/{{sound.nameFile}}{{sound.extension}}" id="{{sound.nameFile}}" preload="auto">
+            <p>Tu navegador no implementa el elemento audio.</p>
+          </audio>
+          {{sound.prueba}}
+          <div>
+            <ion-button class="controls" (click)="playerPlayPause(sound.nameFile)" color="dark">
+              <ion-icon id="{{sound.nameFile}}Btn1" slot="icon-only" name="play"></ion-icon>
+            </ion-button>
+            <ion-button class="controls" (click)="playerStop(sound.nameFile)" color="dark">
+                <ion-icon id="{{sound.nameFile}}Btn2" slot="icon-only" name="square"></ion-icon>
+            </ion-button>
+            <ion-button class="controls" (click)="playerLoop(sound.nameFile)" color="dark">
+                <ion-icon id="{{sound.nameFile}}Btn3" slot="icon-only" name="infinite"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </div>
+    </ion-card>
+
+</ion-content>

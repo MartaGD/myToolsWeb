@@ -1,4 +1,4 @@
-export interface ITagsHTML {
+export interface ITags {
     openSign:string,
     closeSign:string,
     openTABLE:string,

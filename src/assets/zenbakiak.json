@@ -1,0 +1,27 @@
+[
+    { 
+        "sign": 0,
+        "word"  : "zero"
+    },
+    { 
+        "sign": 1,
+        "word"  : "bat"
+    },
+    { 
+        "sign": 2,
+        "word"  : "bi"
+    },
+    { 
+        "sign": 3,
+        "word"  : "hiru"
+    },
+    { 
+        "sign": 4,
+        "word"  : "lau"
+    },
+    { 
+        "sign": 5,
+        "word"  : "bost"
+    }
+    
+]

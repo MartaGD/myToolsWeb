@@ -1,0 +1,10 @@
+{
+    "openSign":"<",
+    "closeSign":">",
+    "openTABLE":"<ion-grid>",
+    "closeTABLE":"</ion-grid>",
+    "openTR":"<ion-row>",
+    "closeTR":"</ion-row>",
+    "openTD":"<ion-col width-20 height-20>",
+    "closeTD":"</ion-col>"
+}

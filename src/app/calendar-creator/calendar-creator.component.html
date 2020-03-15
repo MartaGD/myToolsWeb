@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="divFlex">
+          <ion-row>
+              <ion-col>
+                <label for="rows">{{lbMonth}}</label>
+                <input type="month" name="inputs" id="monthSelector"/>
+              </ion-col>
+          </ion-row>     
+          <ion-row>
+            <ion-col id="calendarSpace"></ion-col>
+          </ion-row> 
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -30,6 +30,16 @@ export class AppComponent {
       title: 'Zenbaki Jokoa',
       url: '/zenbaki',
       icon: 'star'
+    },
+    {
+      title: 'Calendar Creator',
+      url: '/calendarCreator',
+      icon: 'calendar'
+    },
+    {
+      title: 'Music Box',
+      url: '/musicBox',
+      icon: 'musical-notes'
     }
   ];
 

@@ -1,0 +1,16 @@
+[
+  {
+    "nameFile": "comptaAmbMi",
+    "nameShow": "Compta amb mi",
+    "extension": ".mp3",
+    "group": "songs",
+    "loop": false
+  },
+  {
+    "nameFile": "brama",
+    "nameShow": "Brama",
+    "extension": ".mp3",
+    "group": "songs",
+    "loop": false
+  }
+]

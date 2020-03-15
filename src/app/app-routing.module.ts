@@ -22,6 +22,14 @@ const routes: Routes = [
   {
     path: 'zenbaki',
     loadChildren: () => import('./zenbaki-jokoa/zenbaki-jokoa.module').then(m => m.ZenbakiJokoaModule)
+  },
+  {
+    path: 'calendarCreator',
+    loadChildren: () => import('./calendar-creator/calendar-creator.module').then(m => m.CalendarCreatorModule)
+  },
+  {
+    path: 'musicBox',
+    loadChildren: () => import('./music-box/music-box.module').then(m => m.MusicBoxModule)
   }
 ];
 
